@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generador de Excusas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>¿Quieres una excusa?</h1>
+  <div id="excuse"></div>
+  <button id="generateExcuse">Generar Excusa</button>
+
+  <script>
+    const excuses = [
+      "Lo siento, se comió los deberes el perro.",
+      "Tengo una cena con una 'amiga'.",
+      "Hoy tengo el css estropeado.",
+      "Estoy a 1em de tí.",
+      "Tu margin es demasiado Top.",
+      "me duelen las uñas.",
+      "He vuelto con mi ex."
+    ];
+
+    function generateExcuse() {
+      const randomExcuse = Math.floor(Math.random() * excuses.length);
+      const excuse = excuses[randomExcuse];
+      document.getElementById('excuse').innerText = excuse;
+    }
+
+    document.getElementById('generateExcuse').addEventListener('click', generateExcuse);
+  </script>
+</body>
+</html>
