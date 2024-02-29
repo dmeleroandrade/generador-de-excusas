@@ -1,18 +1,14 @@
-body {font-family: Arial, sans-serif;
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
     text-align: center;
-    
-    #excuse {
-    font-size: 1.5rem;
-    margin-top: 50px;
-    }
-    button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    background-color: red;
-    font-family: 'Courier New', Courier, monospace;
-    border-radius: 1em;
-    margin-top: 2em;
-    }
-    }
-    
+    margin-top: 100px;
+  }
+  
+  #excusa {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
